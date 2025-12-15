@@ -1,0 +1,17 @@
+# Configuração de Logs de Moderação para o Bot Verl.ia Ultimate
+
+Para que o bot possa registrar os eventos de moderação (bans, kicks, warns, etc.) e outros eventos importantes (entrada/saída de membros, mensagens editadas/deletadas), você precisa designar um canal de texto específico no seu servidor.
+
+## Como Configurar:
+
+1.  **Crie um Canal de Texto:**
+    *   No seu servidor Discord, crie um novo canal de texto.
+    *   Um nome comum seria `#logs-moderacao`, `#mod-logs`, ou similar.
+    *   Certifique-se de que o bot `Verl.ia Ultimate` tenha permissão para **enviar mensagens** neste canal. Sem esta permissão, o bot não conseguirá registrar os logs.
+    *   (Opcional, mas recomendado) Configure as permissões do canal para que apenas administradores e moderadores possam visualizá-lo, mantendo os logs confidenciais.
+
+2.  **Use o Comando de Configuração:**
+    *   Após criar o canal, use o comando de barra `/setup_logs` no Discord.
+    *   Quando o bot pedir pelo argumento `channel`, selecione o canal que você acabou de criar.
+
+    **Exemplo:**
