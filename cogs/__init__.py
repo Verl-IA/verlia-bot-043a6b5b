@@ -1,3 +1,7 @@
+import discord
+from discord.ext import commands
+import os
+
 from discord.ext import commands
 
 class MyCog(commands.Cog):
@@ -13,3 +17,6 @@ class MyCog(commands.Cog):
 
 async def setup(bot):
     await bot.add_cog(MyCog(bot))
+
+
+bot.run(os.environ.get('BOT_TOKEN'))
